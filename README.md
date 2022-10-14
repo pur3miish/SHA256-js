@@ -1,8 +1,8 @@
 # SHA256-js
 
-An ultra lightweight JavaScript SHA256 cryptographic hash function.
+An ultra lightweight universal JavaScript SHA256 cryptographic hash function for Node.js and Browsers.
 
-- \~2 kB _(minifeied + gzipped) to bundle_
+- ~400 bytes _(minifeied + gzipped) to bundle_
 
 # Setup
 
