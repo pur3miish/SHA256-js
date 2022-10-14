@@ -1,7 +1,6 @@
 {
   "name": "universal-sha256-js",
-  "version": "1.0.1",
-  "description": "An ultra lightweight ~400b JavaScript SHA256 cryptographic hash function (Node.js + Browsers).",
+  "version": "1.0.2",
   "description": "An ultra lightweight ~400b universal JavaScript SHA256 cryptographic hash function (Node.js + Browsers).",
   "scripts": {
     "prepare": "npm run prepare:jsdoc && npm run prepare:prettier",
