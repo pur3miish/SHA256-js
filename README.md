@@ -32,13 +32,13 @@ Universal sha256 message digest helper function.
 _Ways to `import`._
 
 > ```js
-> import { sha256 } from 'sha256-js'
+> import sha256 from 'sha256-js'
 > ```
 
 _Ways to `require`._
 
 > ```js
-> const { sha256 } = require('sha256-js')
+> const sha256 = require('sha256-js')
 > ```
 
 _Usage `sha256` in node._

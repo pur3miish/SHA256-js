@@ -9,11 +9,11 @@ const { createHash } = require('crypto')
  * @returns {Uint8Array} Message digest.
  * @example <caption>Ways to `import`.</caption>
  * ```js
- * import { sha256 } from 'sha256-js'
+ * import sha256 from 'sha256-js'
  * ```
  * @example <caption>Ways to `require`.</caption>
  * ```js
- * const { sha256 } = require('sha256-js')
+ * const sha256 = require('sha256-js')
  * ```
  * @example <caption>Usage `sha256` in node.</caption>
  * ```js
