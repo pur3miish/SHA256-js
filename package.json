@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pur3miish/SHA256-js.git"
+    "url": "git+https://github.com/pur3miish/universal-sha256-js.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pur3miish/SHA256-js/issues"
+    "url": "https://github.com/pur3miish/universal-sha256-js/issues"
   },
-  "homepage": "https://github.com/pur3miish/SHA256-js#readme",
+  "homepage": "https://github.com/pur3miish/universal-sha256-js#readme",
   "engines": {
     "node": ">=16"
   },

@@ -1,13 +1,25 @@
-# SHA256-js
+# Universal-SHA256-js
 
 An ultra lightweight universal JavaScript SHA256 cryptographic hash function for Node.js and Browsers.
 
-- \~400 bytes _(minifeied + gzipped) to bundle_
+- <400 bytes _(minifeied + gzipped) to bundle_
 
 # Setup
 
 ```shell
-npm i sha256-js
+npm i universal-sha256-js
+```
+
+Ways to require.
+
+```js
+const sha256 = require('universal-sha256-js')
+```
+
+Ways to import.
+
+```js
+import sha256 from 'universal-sha256-js'
 ```
 
 # Support
