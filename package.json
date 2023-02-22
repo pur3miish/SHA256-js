@@ -1,15 +1,14 @@
 {
   "name": "universal-sha256-js",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "An ultra lightweight ~400b universal JavaScript SHA256 cryptographic hash function (Node.js + Browsers).",
   "scripts": {
-    "prepare": "npm run prepare:jsdoc && npm run prepare:prettier",
-    "prepare:jsdoc": "jsdoc-md",
-    "prepare:prettier": "prettier --write readme.md",
-    "test": "npm run test:eslint && npm run test:prettier && npm run test:api",
-    "test:api": "coverage-node test/index.test.mjs",
-    "test:eslint": "eslint .",
-    "test:prettier": "prettier -c .",
+    "eslint": "eslint .",
+    "prettier": "prettier -c .",
+    "prettier:readme": "prettier --write readme.md",
+    "types": "tsc -p jsconfig.json",
+    "tests": "coverage-node test/index.test.mjs",
+    "test": "npm run eslint && npm run prettier && npm run types && npm run tests",
     "prepublishOnly": "npm test"
   },
   "repository": {
@@ -31,11 +30,11 @@
   ],
   "sideEffects": false,
   "files": [
-    "index.js"
+    "sha256.mjs"
   ],
   "exports": {
     "./package.json": "./package.json",
-    ".": "./index.js"
+    "./sha256.mjs": "./sha256.mjs"
   },
   "keywords": [
     "SHA256",
@@ -45,17 +44,12 @@
     "hash"
   ],
   "devDependencies": {
+    "@types/node": "^18.13.0",
     "coverage-node": "^8.0.0",
-    "eslint": "^8.25.0",
-    "eslint-config-env": "^23.0.2",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-compat": "^4.0.2",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsdoc": "^39.3.6",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "jsdoc-md": "^11.0.2",
-    "prettier": "^2.7.1",
-    "test-director": "^10.0.0"
+    "eslint": "^8.34.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^2.8.4",
+    "test-director": "^10.0.0",
+    "typescript": "^4.9.5"
   }
 }

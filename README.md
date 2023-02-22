@@ -1,66 +1,38 @@
 # Universal-SHA256-js
 
-An ultra lightweight universal JavaScript SHA256 cryptographic hash function for Node.js and Browsers.
+A SHA256 cryptographic hash function that is compatible with Node.js, Deno, and web browsers, and is designed to be extremely lightweight.
 
-- <400 bytes _(minifeied + gzipped) to bundle_
+## Setup
 
-# Setup
+Node.js
 
 ```shell
 npm i universal-sha256-js
 ```
 
-Ways to require.
+Deno
 
 ```js
-const sha256 = require('universal-sha256-js')
+import sha256 from "https://deno.land/x/sha256js/sha256.mjs";
 ```
 
-Ways to import.
-
-```js
-import sha256 from 'universal-sha256-js'
-```
-
-# Support
+## Support
 
 - Node.js `>16`
 - Browser `defaults, no IE 11`
+- Deno `^1.30.0`
 
-# API
+## Examples
 
-## function sha256
+Usage `sha256`
 
-Universal sha256 message digest helper function.
+```js
+import sha256 from "universal-sha256-js/sha256.mjs";
 
-| Parameter | Type       | Description          |
-| :-------- | :--------- | :------------------- |
-| `data`    | Uint8Array | Binary data to hash. |
+const array = Uint8Array.from(
+  Buffer.from("The quick brown fox jumped over the lazy dog")
+);
+sha256(array).then(console.log);
+```
 
-**Returns:** Uint8Array — Message digest.
-
-### Examples
-
-_Ways to `import`._
-
-> ```js
-> import sha256 from 'sha256-js'
-> ```
-
-_Ways to `require`._
-
-> ```js
-> const sha256 = require('sha256-js')
-> ```
-
-_Usage `sha256` in node._
-
-> ```js
-> const array = Uint8Array.from(
->   Buffer.from('The quick brown fox jumped over the lazy dog')
-> )
->
-> sha256(array).then(console.log)
-> ```
->
-> > The logged output is \[215, …, 146 ]
+> The logged output is \[215, …, 146 ]
